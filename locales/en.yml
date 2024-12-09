@@ -1,5 +1,10 @@
 en:
   theme_metadata:
-    description: "TODO"
+    description: "Adds a QR Code generator wherever a shareable link/invite is present (usually alongside normal social media share sources). Includes additional options for QR Code customization."
     settings:
-      example_setting: "A description of a setting."
+      share_in_private: "Allow the QR Code to be shared in PMs and login_required sites."
+      image: "Image to add to the center of the QR Code. If not provided, the normal QR Code will be generated."
+      image_hide_background_dots: "Hide the background dots behind the image."
+      image_margin: "The px margin around the image in the center of the QR Code."
+      image_size: "Size of the image in the center of the QR Code. 0.4 is the default size."
+  qr_code_share_title: "Generate QR Code"

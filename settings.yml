@@ -1,2 +1,61 @@
-example_setting:
-  default: true
+share_in_private:
+  default: false
+  client: true
+dots_color:
+  default: "#000000"
+  client: true
+  type: string
+dots_type:
+  default: "square"
+  client: true
+  type: enum
+  choices:
+    - "rounded"
+    - "dots"
+    - "classy"
+    - "classy-rounded"
+    - "square"
+    - "extra-rounded"
+corners_square_color:
+  default: "#000000"
+  client: true
+  type: string
+corners_square_type:
+  default: "square"
+  client: true
+  type: enum
+  choices:
+    - "dots"
+    - "square"
+    - "extra-rounded"
+# corners_dots_color:
+#   default: "#000000"
+#   client: true
+#   type: string
+corners_dots_type:
+  default: "square"
+  client: true
+  type: enum
+  choices:
+    - "dot"
+    - "square"
+background_color:
+  default: "#ffffff"
+  client: true
+  type: string
+image:
+  default: ""
+  type: upload
+  client: true
+image_hide_background_dots:
+  default: false
+  client: true
+image_margin:
+  default: 0
+  client: true
+image_size:
+  default: 0.4
+  client: true
+  type: float
+  min: 0
+  max: 1

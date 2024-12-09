@@ -1,0 +1,9 @@
+.qr-code-shareable-canvas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+  canvas {
+    border-radius: 10px;
+  }
+}
