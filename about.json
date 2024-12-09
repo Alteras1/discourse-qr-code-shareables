@@ -1,13 +1,16 @@
 {
-  "name": "TODO",
+  "name": "QR Code Shareables",
   "component": true,
-  "authors": "Discourse",
+  "authors": "Alteras",
   "about_url": "TODO: Put your theme's public repo or Meta topic URL here",
-  "license_url": "TODO: Put your theme's LICENSE URL here",
-  "learn_more": "TODO",
+  "license_url": "https://github.com/Alteras1/discourse-qr-code-shareables/blob/main/LICENSE",
+  "learn_more": "Adds a QR Code generator wherever a shareable link/invite is present (usually alongside normal social media share sources). Includes additional options for QR Code customization.",
   "theme_version": "0.0.1",
-  "minimum_discourse_version": null,
+  "minimum_discourse_version": "3.2.0",
   "maximum_discourse_version": null,
-  "assets": {},
+  "assets": {
+    "qr_code_styling": "assets/qr-code-styling.js",
+    "icons-sprite": "/assets/custom-svgs.svg"
+  },
   "modifiers": {}
 }

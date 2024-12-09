@@ -1,5 +1,8 @@
 {
   "private": true,
+  "scripts": {
+    "copy-vendor": "node -e \"require('fs').copyFileSync('node_modules/qr-code-styling/lib/qr-code-styling.js', 'assets/qr-code-styling.js')\""
+  },
   "devDependencies": {
     "@discourse/lint-configs": "2.2.2",
     "ember-template-lint": "6.0.0",
@@ -11,5 +14,8 @@
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm",
     "pnpm": ">= 9"
+  },
+  "dependencies": {
+    "qr-code-styling": "^1.8.4"
   }
 }

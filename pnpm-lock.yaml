@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      qr-code-styling:
+        specifier: ^1.8.4
+        version: 1.8.4
     devDependencies:
       '@discourse/lint-configs':
         specifier: 2.2.2
@@ -1444,6 +1448,13 @@ packages:
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
+
+  qr-code-styling@1.8.4:
+    resolution: {integrity: sha512-uxykNuvXaPDK/jGDERDIdDvvocefbHu1oxVYi6K87FUdPPAezkBdcIeFJ8XVX2HSsyLFINile5uzfOMYpGu5ZA==}
+    engines: {node: '>=18.18.0'}
+
+  qrcode-generator@1.4.4:
+    resolution: {integrity: sha512-HM7yY8O2ilqhmULxGMpcHSF1EhJJ9yBj8gvDEuZ6M+KGJ0YY2hKpnXvRD+hZPLrDVck3ExIGhmPtSdcjC+guuw==}
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -3565,6 +3576,12 @@ snapshots:
       signal-exit: 3.0.7
 
   punycode@2.3.1: {}
+
+  qr-code-styling@1.8.4:
+    dependencies:
+      qrcode-generator: 1.4.4
+
+  qrcode-generator@1.4.4: {}
 
   queue-microtask@1.2.3: {}
 
