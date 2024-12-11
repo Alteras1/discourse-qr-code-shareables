@@ -56,7 +56,13 @@ async function generateQRCode(link, element) {
     },
     margin: 3,
   });
-  qrCode.append(element);
+  const blob = await qrCode.getRawData("png");
+  const image = document.createElement("img");
+  image.src = URL.createObjectURL(blob);
+  image.alt = "QR Code";
+  image.width = 300;
+  image.height = 300;
+  element.appendChild(image);
 }
 
 /**
