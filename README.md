@@ -6,7 +6,7 @@ Adds a QR Code generator wherever a shareable link/invite is present (usually al
 
 Uses the [QR Code Styling](https://www.npmjs.com/package/qr-code-styling) library.
 
-For more information, please see: **url to meta topic**
+For more information, please see: **https://meta.discourse.org/t/qr-code-shareables/341948**
 
 ## Dev notes
 
