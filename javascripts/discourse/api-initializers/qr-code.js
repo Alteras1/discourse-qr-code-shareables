@@ -49,13 +49,14 @@ async function generateQRCode(link, element) {
       color: settings.background_color,
     },
     imageOptions: {
-      crossOrigin: "anonymous",
-      hideBackgroundDots: true,
+      hideBackgroundDots: settings.hide_background_dots,
       margin: settings.image_margin,
       imageSize: settings.image_size,
     },
     margin: 3,
   });
+  // a bit of a hack, but force a rerender to make sure the image is loaded on mobile
+  await qrCode.getRawData("png");
   const blob = await qrCode.getRawData("png");
   const image = document.createElement("img");
   image.src = URL.createObjectURL(blob);
