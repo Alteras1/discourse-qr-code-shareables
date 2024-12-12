@@ -49,7 +49,7 @@ async function generateQRCode(link, element) {
       color: settings.background_color,
     },
     imageOptions: {
-      hideBackgroundDots: settings.hide_background_dots,
+      hideBackgroundDots: settings.image_hide_background_dots,
       margin: settings.image_margin,
       imageSize: settings.image_size,
     },
