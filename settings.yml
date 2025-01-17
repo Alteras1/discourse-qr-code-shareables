@@ -28,6 +28,7 @@ corners_square_type:
     - "dots"
     - "square"
     - "extra-rounded"
+    - "dot"
     - "rounded"
     - "classy"
     - "classy-rounded"
@@ -44,6 +45,7 @@ corners_dots_type:
     - "square"
     - "extra-rounded"
     - "rounded"
+    - "dots"
     - "classy"
     - "classy-rounded"
 background_color:
