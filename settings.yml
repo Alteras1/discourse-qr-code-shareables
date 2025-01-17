@@ -28,6 +28,9 @@ corners_square_type:
     - "dots"
     - "square"
     - "extra-rounded"
+    - "rounded"
+    - "classy"
+    - "classy-rounded"
 # corners_dots_color:
 #   default: "#000000"
 #   client: true
@@ -39,6 +42,10 @@ corners_dots_type:
   choices:
     - "dot"
     - "square"
+    - "extra-rounded"
+    - "rounded"
+    - "classy"
+    - "classy-rounded"
 background_color:
   default: "#ffffff"
   client: true
