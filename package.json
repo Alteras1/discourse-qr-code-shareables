@@ -16,6 +16,6 @@
     "pnpm": ">= 9"
   },
   "dependencies": {
-    "qr-code-styling": "^1.8.4"
+    "qr-code-styling": "^1.9.1"
   }
 }

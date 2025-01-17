@@ -26,8 +26,7 @@ const createCanvas = () => {
 async function generateQRCode(link, element) {
   await loadScript(settings.theme_uploads_local.qr_code_styling);
   const QRCodeStyling = window.QRCodeStyling;
-  /** @type {QRCodeStyling} */
-  const qrCode = new QRCodeStyling({
+  const opts = {
     width: 300,
     height: 300,
     data: link,
@@ -52,11 +51,20 @@ async function generateQRCode(link, element) {
       hideBackgroundDots: settings.image_hide_background_dots,
       margin: settings.image_margin,
       imageSize: settings.image_size,
+      crossOrigin: "anonymous",
+      saveAsBlob: true,
     },
     margin: 3,
-  });
-  // a bit of a hack, but force a rerender to make sure the image is loaded on mobile
-  await qrCode.getRawData("png");
+  };
+
+  if (navigator.userAgent.includes("Safari")) {
+    // force a rerender on Safari due to weird center image bug
+    const tempQrCode = new QRCodeStyling(opts);
+    await tempQrCode.getRawData("png");
+  }
+
+  /** @type {QRCodeStyling} */
+  const qrCode = new QRCodeStyling(opts);
   const blob = await qrCode.getRawData("png");
   const image = document.createElement("img");
   image.src = URL.createObjectURL(blob);
