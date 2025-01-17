@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       qr-code-styling:
-        specifier: ^1.8.4
-        version: 1.8.4
+        specifier: ^1.9.1
+        version: 1.9.1
     devDependencies:
       '@discourse/lint-configs':
         specifier: 2.2.2
@@ -1449,8 +1449,8 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  qr-code-styling@1.8.4:
-    resolution: {integrity: sha512-uxykNuvXaPDK/jGDERDIdDvvocefbHu1oxVYi6K87FUdPPAezkBdcIeFJ8XVX2HSsyLFINile5uzfOMYpGu5ZA==}
+  qr-code-styling@1.9.1:
+    resolution: {integrity: sha512-T/VxQchuZkQwYhIcyyMUmtXHPeDT6lJBYHfqGD5CBDyIjswxS7JZKf443q+SXO1K/9SUswi6JpXEUQ5AoMCpyg==}
     engines: {node: '>=18.18.0'}
 
   qrcode-generator@1.4.4:
@@ -3577,7 +3577,7 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  qr-code-styling@1.8.4:
+  qr-code-styling@1.9.1:
     dependencies:
       qrcode-generator: 1.4.4
 
